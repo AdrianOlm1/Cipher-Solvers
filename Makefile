@@ -4,7 +4,7 @@ CFLAGS = -Wall -Wextra -pedantic -std=c11
 VALGRIND = valgrind --leak-check=full --track-origins=yes
 
 # Targets
-all: Ceaser Substitution_Solver Vignette
+all: Ceaser Substitution_Solver Vigenere
 
 Ceaser: Ceaser.o
 	$(CC) $(CFLAGS) -o Ceaser Ceaser.o
@@ -18,14 +18,14 @@ Substitution_Solver: Substitution_Solver.o
 Substitution_Solver.o: Substitution_Solver.c
 	$(CC) $(CFLAGS) -c Substitution_Solver.c
 
-Vignette: Vignette.o
-	$(CC) $(CFLAGS) -o Vignette Vignette.o
+Vigenere: Vigenere.o
+	$(CC) $(CFLAGS) -o Vigenere Vigenere.o
 
-Vignette.o: Vignette.c
-	$(CC) $(CFLAGS) -c Vignette.c
+Vigenere.o: Vigenere.c
+	$(CC) $(CFLAGS) -c Vigenere.c
 
 clean:
-	rm -f *.o Ceaser Substitution_Solver Vignette
+	rm -f *.o Ceaser Substitution_Solver Vigenere
 
 valgrind_Ceaser: Ceaser
 	$(VALGRIND) ./Ceaser
@@ -33,8 +33,8 @@ valgrind_Ceaser: Ceaser
 valgrind_Substitution_Solver: Substitution_Solver
 	$(VALGRIND) ./Substitution_Solver
 
-valgrind_Vignette: Vignette
-	$(VALGRIND) ./Vignette
+valgrind_Vigenere: Vigenere
+	$(VALGRIND) ./Vigenere
 
-.PHONY: all clean valgrind_Ceaser valgrind_Substitution_Solver valgrind_Vignette
+.PHONY: all clean valgrind_Ceaser valgrind_Substitution_Solver valgrind_Vigenere
 
