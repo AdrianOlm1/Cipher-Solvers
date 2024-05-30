@@ -18,10 +18,10 @@ C files meant to solve ciphers from Math-134 Cryptography
 To use Caesar, first input whether you want to encrypt (E) or decrypt (D). Then input the shift value and lastly the string. The encrypted or decrypted string will be outputted, and then the program will exit.
 
 ### Substitution Solver:
-- **SubSolver Function**: This function will create the key given the initial word in the code, then solve for the whole string written in the code.
-- **AlphaCounter Function**: Outputs the total count of each letter in the given string.
-- **AlphaSolver Function**: This function will first take a character that will be replaced in the given string and then take a character that the initial character will be replaced with. Afterward, the whole string will be outputted with changed letters in lowercase and green and unchanged letters in uppercase and red. This process will continue until the string contains no more uppercase characters or hopefully the substitution is solved.
+- **SubSolver**: This function will create the key given the initial word in the code, then solve for the whole string written in the code.
+- **AlphaCounter**: Outputs the total count of each letter in the given string.
+- **AlphaSolver**: This function will first take a character that will be replaced in the given string and then take a character that the initial character will be replaced with. Afterward, the whole string will be outputted with changed letters in lowercase and green and unchanged letters in uppercase and red. This process will continue until the string contains no more uppercase characters or hopefully the substitution is solved.
 
 ### Vigenere:
-- **Decrypt Function**: Decrypts a given string text and key using the Vigenere cipher.
-- **Encrypt Function**: Encrypts a given string text and key using the Vigenere cipher.
+- **Decrypt**: Decrypts a given string text and key using the Vigenere cipher.
+- **Encrypt**: Encrypts a given string text and key using the Vigenere cipher.
