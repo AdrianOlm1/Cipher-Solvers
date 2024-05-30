@@ -1,6 +1,18 @@
 # Cipher-Solvers
+
+### Name: Adrian Olmos
+
+## Overview
+
 C files meant to solve ciphers from Math-134 Cryptography
 
+## Files Included
+- **Ceaser.c**
+- **SubsitutionSolver.c**
+- **Vigenere.c**
+- **README.md**
+
+## Descriptions
 Ceaser:
 To use Ceaser, first input encrypting(E) or decrypting(D), then input shift and lastly the string. The encrypted or decrypted string will ouput then exit.
 
